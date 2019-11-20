@@ -10,4 +10,4 @@ deploy:
   skip_cleanup: true
   provider: firebase
   token: $FIREBASE_TOKEN
-  project: authentication-9126a
+  project: final-project-e443b
