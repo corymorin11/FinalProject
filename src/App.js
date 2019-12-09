@@ -76,7 +76,13 @@ export function App(props) {
         <ListItem>
           <ListItemIcon />
           <ListItemText>
-            <Button to="/app/orders/grocery-orders" component={Link}>
+            <Button
+              to="/app/orders/grocery-orders"
+              component={Link}
+              onClick={() => {
+                setDrawerOpen(false);
+              }}
+            >
               Groceries
             </Button>
           </ListItemText>
@@ -84,7 +90,13 @@ export function App(props) {
         <ListItem>
           <ListItemIcon />
           <ListItemText>
-            <Button to="/app/orders/office-orders/" component={Link}>
+            <Button
+              to="/app/orders/office-orders/"
+              component={Link}
+              onClick={() => {
+                setDrawerOpen(false);
+              }}
+            >
               Office Supplies
             </Button>
           </ListItemText>
@@ -92,7 +104,13 @@ export function App(props) {
         <ListItem>
           <ListItemIcon />
           <ListItemText>
-            <Button to="/app/photos/grocery-photos/" component={Link}>
+            <Button
+              to="/app/photos/grocery-photos/"
+              component={Link}
+              onClick={() => {
+                setDrawerOpen(false);
+              }}
+            >
               Grocery Pics
             </Button>
           </ListItemText>
@@ -100,7 +118,13 @@ export function App(props) {
         <ListItem>
           <ListItemIcon />
           <ListItemText>
-            <Button to="/app/photos/office-photos/" component={Link}>
+            <Button
+              to="/app/photos/office-photos/"
+              component={Link}
+              onClick={() => {
+                setDrawerOpen(false);
+              }}
+            >
               Office Supplies Pics
             </Button>
           </ListItemText>

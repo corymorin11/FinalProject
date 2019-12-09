@@ -18,6 +18,7 @@ export default function Photos(props) {
       });
     return unsubscribe;
   }, [props]);
+
   return (
     <div
       style={{

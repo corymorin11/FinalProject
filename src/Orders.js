@@ -19,7 +19,7 @@ export default function Orders(props) {
 
   const addOrder = () => {
     db.collection(props.match.params.group)
-      .add({ text: newOrder, checked: false })
+      .add({ message: newOrder, checked: false })
       .then(() => {});
     setNewOrder("");
   };
@@ -43,7 +43,7 @@ export default function Orders(props) {
         const grocery_orders = snapshot.docs.map(qs => {
           return {
             id: qs.id,
-            text: qs.data().text,
+            text: qs.data().message,
             checked: qs.data().checked
           };
         });
